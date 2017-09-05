@@ -1,2 +1,79 @@
-# TT
-虎牙公共头
+# 虎牙公共头
+
+依赖 jQuery 1.7+
+
+### 使用示例
+
+专题活动(hd.huya.com, www.huya.com/act)
+
+```html
+    ...
+    ...
+    ...
+    <script src="http://a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="http://a.msstatic.com/huya/common/header_lg.js"></script>
+    ...
+    <script src="http://a.msstatic.com/huya/common/footer.js"></script>
+</body>
+```
+
+个人中心(i.huya.com)
+
+```html
+    ...
+    ...
+    ...
+    <script src="http://a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="http://a.msstatic.com/huya/common/header.js"></script>
+    ...
+    <script src="http://a.msstatic.com/huya/common/footer.js"></script>
+</body>
+```
+
+*注意：公共头DOM是以异步的方式生成并插入到`<body>`中的，`position`是默认的`static`，为了防止页面出现抖动，你可以在自己的项目中设置它的`position: fixed;`，同时通过设置`body {padding-top: 50px;}`或者用一个高度为50px的空盒子为它预留位置以免遮住下面的内容*
+
+### TT
+
+公共头会创建一个全局对象 ——— TT
+
+* TT.sudo(callback, todo)
+
+  在未登录的情况下调用此方法，callback不会被执行，(todo不为`false`时)会触发登录操作；已登录的情况下，则会以当前用户信息`{uid, userName, userNick, userLogo}`作为实参调用callback: *（注意，callback的执行是异步的）*
+
+```javascript
+// 订阅
+$('#J_follow').on('click', function(e){
+    TT.sudo(function(userInfo){
+        follow()
+    })
+})
+
+// 欢迎
+$('#welcome_text').text('未登录')
+
+TT.sudo(function(data){
+    $('#welcome_text').text('您好，' + data.userNick)
+}, false)
+```
+
+* TT.getUserInfo(callback)
+
+  获取用户信息
+
+```javascript
+TT.getUserInfo(function(data){
+    // 当用户未登录时，data.uid => 0, data.userName => '', data.userNick => '', data.userLogo => ''
+})
+```
+
+* TT.login
+
+  登录相关
+
+  * TT.login.login() 登录
+
+  * TT.login.logout() 退出
+
+  * TT.login.register() 注册
+
+  * TT.login.check(callback) 检测是否已登录，以检测结果(布尔值)作为实参调用callback
