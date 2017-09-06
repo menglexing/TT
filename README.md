@@ -92,9 +92,10 @@ TT.getUserInfo(function(data){
   
   * TT.domain.main 主站
   
-  * TT.domain.i 个人中心
+  * TT.domain.i 个人中心
   
   * TT.domain.hd 活动
+
 
 * TT.app
 
