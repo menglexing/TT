@@ -10,10 +10,10 @@
     ...
     ...
     ...
-    <script src="http://a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="http://a.msstatic.com/huya/common/header_lg.js"></script>
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/header_lg.js"></script>
     ...
-    <script src="http://a.msstatic.com/huya/common/footer.js"></script>
+    <script src="//a.msstatic.com/huya/common/footer.js"></script>
 </body>
 ```
 
@@ -23,10 +23,10 @@
     ...
     ...
     ...
-    <script src="http://a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="http://a.msstatic.com/huya/common/header.js"></script>
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/header.js"></script>
     ...
-    <script src="http://a.msstatic.com/huya/common/footer.js"></script>
+    <script src="//a.msstatic.com/huya/common/footer.js"></script>
 </body>
 ```
 
