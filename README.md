@@ -110,7 +110,7 @@ TT.getUserInfo(function(data){
 
 * TT.trimUrl(url)
 
-  将http的url中的协议部分去掉，内部实现：`return $.trim(url).replace(/^http\:/, '')`
+  将http的url中的协议部分去掉，内部实现：`return $.trim(url).replace(/^http\:/, '')`
   
 * TT.log(a, b, d...)
 
