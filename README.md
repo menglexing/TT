@@ -98,16 +98,16 @@ TT.getUserInfo(function(data){
 
 * TT.app
 
-  各项目的URL
+  各项目的URL
   
   * TT.app.main
-    
-    等价于 => location.protocol + '//' + TT.domain.main + '/'
-    
+  
+  等价于 => location.protocol + '//' + TT.domain.main + '/'
+  
   * TT.app.i
-
-    等价于 => location.protocol + '//' + TT.domain.i + '/'
-
+  
+  等价于 => location.protocol + '//' + TT.domain.i + '/'
+  
   * TT.app.hd
-
-    等价于 => location.protocol + '//' + TT.domain.hd + '/'
+  
+  等价于 => location.protocol + '//' + TT.domain.hd + '/'
