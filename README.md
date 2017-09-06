@@ -88,26 +88,20 @@ TT.getUserInfo(function(data){
     
 * TT.domain
 
-  各项目域名
+  各项目域名
   
   * TT.domain.main 主站
-    
+  
   * TT.domain.i 个人中心
   
-  * TT.domain.hd 活动
+  * TT.domain.hd 活动
 
 * TT.app
 
   各项目的URL
   
-  * TT.app.main
+  * TT.app.main 等价于 => location.protocol + '//' + TT.domain.main + '/'
   
-  等价于 => location.protocol + '//' + TT.domain.main + '/'
+  * TT.app.i 等价于 => location.protocol + '//' + TT.domain.i + '/'
   
-  * TT.app.i
-  
-  等价于 => location.protocol + '//' + TT.domain.i + '/'
-  
-  * TT.app.hd
-  
-  等价于 => location.protocol + '//' + TT.domain.hd + '/'
+  * TT.app.hd 等价于 => location.protocol + '//' + TT.domain.hd + '/'
