@@ -85,3 +85,29 @@ TT.getUserInfo(function(data){
   * TT.login.check(callback) 
   
     检测是否已登录，以检测结果(布尔值)作为实参调用callback *(不是通过读cookie实现，而是发请求到后台查询的，所以callback是异步调用的)*
+    
+* TT.domain
+
+  各项目域名
+  
+  * TT.domain.main 主站
+    
+  * TT.domain.i 个人中心
+  
+  * TT.domain.hd 活动
+  
+* TT.app
+
+  各项目的URL
+  
+  * TT.app.main
+    
+    等价于 => location.protocol + '//' + TT.domain.main + '/'
+    
+  * TT.app.i
+
+    等价于 => location.protocol + '//' + TT.domain.i + '/'
+
+  * TT.app.hd
+
+    等价于 => location.protocol + '//' + TT.domain.hd + '/'
