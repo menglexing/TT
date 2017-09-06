@@ -95,7 +95,7 @@ TT.getUserInfo(function(data){
   * TT.domain.i 个人中心
   
   * TT.domain.hd 活动
-  
+
 * TT.app
 
   各项目的URL
