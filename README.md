@@ -32,7 +32,7 @@
 
 *注意：公共头DOM是以异步的方式生成并插入到`<body>`中的，`position`是默认的`static`，为了防止页面出现抖动，你可以在自己的项目中设置它的`position: fixed;`，同时通过设置`body {padding-top: 50px;}`或者用一个高度为50px的空盒子为它预留位置以免遮住下面的内容*
 
-### TT
+### TT (Tiger Teeth ^_^)
 
 公共头会创建一个全局对象 ——— TT
 
