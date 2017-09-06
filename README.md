@@ -106,3 +106,12 @@ TT.getUserInfo(function(data){
   * TT.app.i 等价于 => location.protocol + '//' + TT.domain.i + '/'
   
   * TT.app.hd 等价于 => location.protocol + '//' + TT.domain.hd + '/'
+
+
+* TT.trimUrl(url)
+
+  将http的url中的协议部分去掉，内部实现：`return $.trim(url).replace(/^http\:/, '')`
+  
+* TT.log(a, b, d...)
+
+  封装了`console.log`，仅在开发环境和测试环境下可用；如需在线上环境使用，须设置`localStorage.setItem('TT_DEBUG', 1)`
