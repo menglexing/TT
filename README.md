@@ -101,11 +101,11 @@ TT.getUserInfo(function(data){
 
   各项目的URL
   
-  * TT.app.main 等价于 => location.protocol + '//' + TT.domain.main + '/'
+  * TT.app.main 等价于 => `location.protocol + '//' + TT.domain.main + '/'`
   
-  * TT.app.i 等价于 => location.protocol + '//' + TT.domain.i + '/'
+  * TT.app.i 等价于 => `location.protocol + '//' + TT.domain.i + '/'`
   
-  * TT.app.hd 等价于 => location.protocol + '//' + TT.domain.hd + '/'
+  * TT.app.hd 等价于 => `location.protocol + '//' + TT.domain.hd + '/'`
 
 
 * TT.trimUrl(url)
