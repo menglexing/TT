@@ -114,4 +114,4 @@ TT.getUserInfo(function(data){
   
 * TT.log(a, b, d...)
 
-  封装了`console.log`，仅在开发环境和测试环境下可用；如需在线上环境使用，须设置`localStorage.setItem('TT_DEBUG', 1)`
+  封装了`console.log`，仅在开发环境和测试环境下可用；如需在线上环境使用，须设置`localStorage.setItem('TT_DEBUG', 1)`
