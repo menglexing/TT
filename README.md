@@ -70,10 +70,18 @@ TT.getUserInfo(function(data){
 
   登录相关
 
-  * TT.login.login() 登录
+  * TT.login.login() 
+  
+    登录
 
-  * TT.login.logout() 退出
+  * TT.login.logout() 
+  
+    退出
 
-  * TT.login.register() 注册
+  * TT.login.register() 
+  
+    注册
 
-  * TT.login.check(callback) 检测是否已登录，以检测结果(布尔值)作为实参调用callback *(不是通过读cookie实现，而是发请求到后台查询的，所以callback是异步调用的)*
+  * TT.login.check(callback) 
+  
+    检测是否已登录，以检测结果(布尔值)作为实参调用callback *(不是通过读cookie实现，而是发请求到后台查询的，所以callback是异步调用的)*
