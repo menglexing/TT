@@ -30,7 +30,7 @@
 </body>
 ```
 
-测试环境
+测试用
 
 ```html
 <script src="//test.dwstatic.com/common/header_lg.js"></script>
