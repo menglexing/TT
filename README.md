@@ -90,6 +90,7 @@ TT.getUserInfo(function(data){
 
   全局事件总线，文档见 https://github.com/huya-fed/Event
   
+  
 * TT.domain
 
   各项目域名
@@ -116,14 +117,17 @@ TT.getUserInfo(function(data){
 
   将http的url中的协议部分去掉，内部实现：`return $.trim(url).replace(/^http\:/, '')`
   
+  
 * TT.log(a, b, d...)
 
   封装了`console.log`，仅在开发环境和测试环境下可用；如需在线上环境使用，须设置`localStorage.setItem('TT_DEBUG', 1)`
+
 
 * TT.env
 
   环境标识（0, 生产环境; 1, 测试环境; 2, 开发环境;）
   
+  
 * TT.isProd
 
-  是否是生产环境，等价于 `TT.env === 0`
+  是否是生产环境，等价于 `TT.env === 0`
