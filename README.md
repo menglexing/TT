@@ -71,26 +71,25 @@ TT.getUserInfo(function(data){
   登录相关
 
   * TT.login.login() 
-  
+
     登录
 
   * TT.login.logout() 
-  
+
     退出
 
   * TT.login.register() 
-  
+
     注册
 
   * TT.login.check(callback) 
-  
+
     检测是否已登录，以检测结果(布尔值)作为实参调用callback *(不是通过读cookie实现，而是发请求到后台查询的，所以callback是异步调用的)*
-    
+
 * TT.event
 
-  全局事件总线，文档见 https://github.com/huya-fed/Event
-  
-  
+  全局事件总线，文档见 https://github.com/huya-fed/Event
+
 * TT.domain
 
   各项目域名
@@ -100,7 +99,6 @@ TT.getUserInfo(function(data){
   * TT.domain.i 个人中心
   
   * TT.domain.hd 活动
-
 
 * TT.app
 
@@ -117,16 +115,13 @@ TT.getUserInfo(function(data){
 
   将http的url中的协议部分去掉，内部实现：`return $.trim(url).replace(/^http\:/, '')`
   
-  
 * TT.log(a, b, d...)
 
   封装了`console.log`，仅在开发环境和测试环境下可用；如需在线上环境使用，须设置`localStorage.setItem('TT_DEBUG', 1)`
 
-
 * TT.env
 
-  环境标识（0, 生产环境; 1, 测试环境; 2, 开发环境;）
-  
+  环境标识（0, 生产环境; 1, 测试环境; 2, 开发环境;）
   
 * TT.isProd
 
