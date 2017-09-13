@@ -97,10 +97,10 @@ TT.getUserInfo(function(data){
 * TT.event
 
   全局事件总线，文档见 https://github.com/huya-fed/Event
-
+  
 * TT.store
 
-  具有跨域能力的localStorage，文档见 https://github.com/huya-fed/crossStorage
+  具有跨域能力的localStorage，文档见 https://github.com/huya-fed/crossStorage
 
 * TT.domain
 
