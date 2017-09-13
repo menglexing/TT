@@ -40,7 +40,7 @@
 
 *注意：公共头的DOM是以异步的方式生成并插入到`<body>`中的，且`position: fixed;`，为了防止页面内容被遮挡，你需要在自己的项目中设置`body {padding-top: 50px;}`或者用一个高度为50px的空盒子为它预留位置*
 
-在线demo
+测试用例
 
 * http://test.hd.huya.com/header/
 * http://test.www.huya.com/act/header/
