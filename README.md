@@ -35,6 +35,7 @@
 ```html
 <script src="//test.dwstatic.com/common/header_lg.js"></script>
 <script src="//test.dwstatic.com/common/header.js"></script>
+<script src="//test.dwstatic.com/common/footer.js"></script>
 ```
 
 *注意：公共头的DOM是以异步的方式生成并插入到`<body>`中的，且`position: fixed;`，为了防止页面内容被遮挡，你需要在自己的项目中设置`body {padding-top: 50px;}`或者用一个高度为50px的空盒子为它预留位置*
@@ -122,7 +123,7 @@ TT.getUserInfo(function(data){
 
   将http的url中的协议部分去掉，内部实现：`return $.trim(url).replace(/^http\:/, '')`
   
-* TT.log(a, b, d...)
+* TT.log(a, b, c...)
 
   封装了`console.log`，仅在开发环境和测试环境下可用；如需在线上环境使用，须设置`localStorage.setItem('TT_DEBUG', 1)`
 
