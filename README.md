@@ -4,7 +4,7 @@
 
 ### 使用示例
 
-专题活动(hd.huya.com, www.huya.com/act)
+* 专题活动(hd.huya.com, www.huya.com/act)
 
 ```html
     ...
@@ -17,7 +17,14 @@
 </body>
 ```
 
-个人中心(i.huya.com)
+测试可用
+
+```html
+<script src="//test.dwstatic.com/common/header_lg.js"></script>
+<script src="//test.dwstatic.com/common/header.js"></script>
+```
+
+* 个人中心(i.huya.com)
 
 ```html
     ...
@@ -30,10 +37,9 @@
 </body>
 ```
 
-测试环境用
+测试可用
 
 ```html
-<script src="//test.dwstatic.com/common/header_lg.js"></script>
 <script src="//test.dwstatic.com/common/header.js"></script>
 <script src="//test.dwstatic.com/common/footer.js"></script>
 ```
