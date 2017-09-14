@@ -21,7 +21,7 @@
 
 ```html
 <script src="//test.dwstatic.com/common/header_lg.js"></script>
-<script src="//test.dwstatic.com/common/header.js"></script>
+<script src="//test.dwstatic.com/common/footer.js"></script>
 ```
 
 * 个人中心(i.huya.com)
