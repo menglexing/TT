@@ -17,6 +17,22 @@
 </body>
 ```
 
+  写在 `<head>` 里也可以
+  
+```html
+    ...
+    ...
+    ...
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/header_lg.js"></script>
+    ...
+</head>
+<body>
+    ...
+</doby>
+```
+  
+
   *测试可用*
 
 ```html
