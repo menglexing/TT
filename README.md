@@ -1,75 +1,41 @@
-# 虎牙公共头
+# TT (Tiger Teeth ^_^)
 
-依赖 jQuery 1.7+
+支持IE8+，依赖 jQuery 1.7+
 
-### 使用示例
+## 安装
 
-* 专题活动(hd.huya.com, www.huya.com/act)
+
+直接`<script>`引入，推荐放底部，当然放头部也是可以的
+
+ * hd.huya.com/xxx
 
 ```html
     ...
     ...
     ...
     <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="//a.msstatic.com/huya/common/header_lg.js"></script>
+    <script src="//a.msstatic.com/huya/common/TT_lg.js"></script>
     ...
     <script src="//a.msstatic.com/huya/common/footer.js"></script>
 </body>
 ```
 
-  写在 `<head>` 里也可以
-  
-```html
-    ...
-    ...
-    ...
-    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="//a.msstatic.com/huya/common/header_lg.js"></script>
-    ...
-</head>
-<body>
-    ...
-</doby>
-```
-  
-
-  *测试可用*
-
-```html
-<script src="//test.dwstatic.com/common/header_lg.js"></script>
-<script src="//test.dwstatic.com/common/footer.js"></script>
-```
-
-* 个人中心(i.huya.com)
+* www.huya.com/act/xxx
 
 ```html
     ...
     ...
     ...
     <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="//a.msstatic.com/huya/common/header.js"></script>
+    <script src="//a.msstatic.com/huya/common/TT.js"></script>
     ...
     <script src="//a.msstatic.com/huya/common/footer.js"></script>
 </body>
 ```
 
-  *测试可用*
+`TT`会被注册为一个全局变量
 
-```html
-<script src="//test.dwstatic.com/common/header.js"></script>
-<script src="//test.dwstatic.com/common/footer.js"></script>
-```
-
-*注意：公共头的DOM是以异步的方式生成并插入到`<body>`中的，且`position: fixed;`，为了防止页面内容被遮挡，你需要在自己的项目中设置`body {padding-top: 50px;}`或者用一个高度为50px的空盒子为它预留位置*
-
-* 测试用例
-
-  * http://test.hd.huya.com/header/
-  * http://test.www.huya.com/act/header/
-
-### TT (Tiger Teeth ^_^)
-
-公共头会创建一个全局对象 ——— TT
+## API
 
 * TT.sudo(callback, todo)
 
@@ -111,7 +77,18 @@ TT.getUserInfo(function(data){
 
   * TT.login.logout() 
 
-    退出
+    退出。在加载本js之前，可以通过 TT_CFG_CUSTOM 配置退出后跳转到哪个页面（默认当前页面）:
+
+    ```html
+    <script>
+    var TT_CFG_CUSTOM = {
+        login: {
+            logoutNavTo: 'http://www.huya.com/'
+        }
+    }
+    </script>
+    <script src="//a.msstatic.com/huya/common/TT.js"></script>
+    ```
 
   * TT.login.register() 
 
@@ -165,3 +142,57 @@ TT.getUserInfo(function(data){
 * TT.isProd
 
   是否是生产环境，等价于 `TT.env === 0`
+
+## 虎牙公共头
+
+由 TT 和 头部 两部分构成。已经将TT.js/TT_lg.js打包进去
+
+### 使用
+
+推荐放底部，同样放头部也是可以的
+
+* hd.huya.com/xxx
+
+```html
+    ...
+    ...
+    ...
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/header_lg.js"></script>
+    ...
+    <script src="//a.msstatic.com/huya/common/footer.js"></script>
+</body>
+```
+
+* www.huya.com/act/xxx
+
+```html
+    ...
+    ...
+    ...
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/header.js"></script>
+    ...
+    <script src="//a.msstatic.com/huya/common/footer.js"></script>
+</body>
+```
+  
+* 个人中心(i.huya.com)
+
+```html
+    ...
+    ...
+    ...
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/header.js"></script>
+    ...
+    <script src="//a.msstatic.com/huya/common/footer.js"></script>
+</body>
+```
+
+*注意：公共头的DOM是以异步的方式生成并插入到`<body>`中的，且`position: fixed;`，为了防止页面内容被遮挡，你需要在自己的项目中设置`body {padding-top: 50px;}`或者用一个高度为50px的空盒子为它预留位置*
+
+* 测试示例
+
+  * http://test.hd.huya.com/header_lg/
+  * http://test.www.huya.com/act/header/
