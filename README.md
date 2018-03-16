@@ -146,7 +146,7 @@ TT.getUserInfo(function(data){
 * TT.createRoomHost(privateHost, roomId, yyId)
 
   用于生成直播间的location.pathname
-
+  
 ## 虎牙公共头
 
 由 TT 和 头部 两部分构成。已经将TT.js/TT_lg.js打包进去
