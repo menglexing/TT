@@ -142,6 +142,10 @@ TT.getUserInfo(function(data){
 * TT.isProd
 
   是否是生产环境，等价于 `TT.env === 0`
+  
+* TT.createRoomHost(privateHost, roomId, yyId)
+
+  用于生成直播间的location.pathname
 
 ## 虎牙公共头
 
