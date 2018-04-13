@@ -69,7 +69,7 @@ TT.getUserInfo(function(data){
 
 * TT.login
 
-  登录相关
+  登录相关。*（如果使用的是 `TT_lg.js`，请确保页面所属的域名已部署了登录回调页）*
 
   * TT.login.login() 
 
