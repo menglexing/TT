@@ -41,31 +41,35 @@
 
   在未登录的情况下调用此方法，callback不会被执行，(todo不为`false`时)会触发登录操作；已登录的情况下，则会以当前用户信息`{uid, userName, userNick, userLogo}`作为实参调用callback: *（注意，callback的执行是异步的）*
 
-```javascript
-// 订阅
-$('#J_follow').on('click', function(e){
-    TT.sudo(function(userInfo){
-        follow()
-    })
-})
+  ```javascript
+  // 订阅
+  $('#J_follow').on('click', function(e){
+      TT.sudo(function(userInfo){
+          follow()
+      })
+  })
 
-// 欢迎
-$('#welcome_text').text('未登录')
+  // 欢迎
+  $('#welcome_text').text('未登录')
 
-TT.sudo(function(data){
-    $('#welcome_text').text('您好，' + data.userNick)
-}, false)
-```
+  TT.sudo(function(data){
+      $('#welcome_text').text('您好，' + data.userNick)
+  }, false)
+  ```
 
 * TT.getUserInfo(callback)
 
   获取用户信息
 
-```javascript
-TT.getUserInfo(function(data){
-    // 当用户未登录时，data.uid => 0, data.userName => '', data.userNick => '', data.userLogo => ''
-})
-```
+  ```javascript
+  TT.getUserInfo(function(data){
+      // 当用户未登录时，data.uid => 0, data.userName => '', data.userNick => '', data.userLogo => ''
+  })
+  ```
+
+* TT.userType
+
+  这是个方法，不是属性！调用会返回一个标识用户类型的number。10, 虎牙自有账号; 11, 虎牙第三方账号; 20, yy自有账号; 21, yy第三方账号; 0, 匿名账号(未登录);
 
 * TT.login
 
