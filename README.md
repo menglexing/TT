@@ -115,7 +115,9 @@
   全局事件总线，文档见 https://github.com/huya-fed/Event
   
 * TT.store
+
   *win7 + IE 11 下会在进行跨页面localStorage存储访问时会有内存泄露的情况，so，不再推荐使用*
+  
   具有跨域能力的localStorage，文档见 https://github.com/huya-fed/crossStorage
 
 * TT.domain
