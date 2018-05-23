@@ -7,7 +7,20 @@
 
 直接`<script>`引入，推荐放底部，当然放头部也是可以的
 
- * hd.huya.com/xxx
+* (www|i|help|blog).huya.com 域下的页面用 TT.js
+
+```html
+    ...
+    ...
+    ...
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/TT.js"></script>
+    ...
+    <script src="//a.msstatic.com/huya/common/footer.js"></script>
+</body>
+```
+
+ * 非(www|i|help|blog).huya.com 域下的页面用 TT_lg.js
 
 ```html
     ...
@@ -20,18 +33,6 @@
 </body>
 ```
 
-* www.huya.com/act/xxx
-
-```html
-    ...
-    ...
-    ...
-    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="//a.msstatic.com/huya/common/TT.js"></script>
-    ...
-    <script src="//a.msstatic.com/huya/common/footer.js"></script>
-</body>
-```
 
 `TT`会被注册为一个全局变量
 
