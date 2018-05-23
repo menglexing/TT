@@ -164,13 +164,26 @@
   
 ## 虎牙公共头
 
-由 TT 和 头部 两部分构成。已经将TT.js/TT_lg.js打包进去
+由 TT 和 头部UI 两部分构成。*（已经将TT.js/TT_lg.js打包进去）*
 
 ### 使用
 
 推荐放底部，同样放头部也是可以的
 
-* hd.huya.com/xxx
+* (www|i|help|blog).huya.com 域下的页面用 header.js
+
+```html
+    ...
+    ...
+    ...
+    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
+    <script src="//a.msstatic.com/huya/common/header.js"></script>
+    ...
+    <script src="//a.msstatic.com/huya/common/footer.js"></script>
+</body>
+```
+
+* 非(www|i|help|blog).huya.com 域下的页面用 header_lg.js
 
 ```html
     ...
@@ -178,32 +191,6 @@
     ...
     <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
     <script src="//a.msstatic.com/huya/common/header_lg.js"></script>
-    ...
-    <script src="//a.msstatic.com/huya/common/footer.js"></script>
-</body>
-```
-
-* www.huya.com/act/xxx
-
-```html
-    ...
-    ...
-    ...
-    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="//a.msstatic.com/huya/common/header.js"></script>
-    ...
-    <script src="//a.msstatic.com/huya/common/footer.js"></script>
-</body>
-```
-  
-* 个人中心(i.huya.com)
-
-```html
-    ...
-    ...
-    ...
-    <script src="//a.msstatic.com/huya/common/jquery-1.12.4.min.js"></script>
-    <script src="//a.msstatic.com/huya/common/header.js"></script>
     ...
     <script src="//a.msstatic.com/huya/common/footer.js"></script>
 </body>
